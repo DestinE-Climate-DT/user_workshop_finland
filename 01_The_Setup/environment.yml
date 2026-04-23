@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - ipykernel
+  - nbformat
+  - healpy
+  - pip
+name: climatedt_workshop
