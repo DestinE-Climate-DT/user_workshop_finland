@@ -7,4 +7,11 @@ dependencies:
   - nbformat
   - healpy
   - pip
+  - intake
+  - intake-esm
+  - pandas
+  - xarray
+  - gcsfs
+  - zarr
+  - cartopy
 name: climatedt_workshop
