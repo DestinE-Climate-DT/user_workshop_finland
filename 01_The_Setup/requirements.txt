@@ -1,0 +1,4 @@
+ipython
+earthkit
+polytope-client
+lxml
