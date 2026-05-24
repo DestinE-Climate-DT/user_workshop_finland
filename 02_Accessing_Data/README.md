@@ -1,1 +1,2 @@
-Here we can add how to make a request and exercises for that.
+
+# Add some suggested exercises here for certain configs or smth...
