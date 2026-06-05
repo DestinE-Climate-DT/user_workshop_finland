@@ -5,6 +5,7 @@ desp-authentication.py
 .ipynb_checkpoints
 
 data/
+slides/
 
 # Marimo
 marimo/_static/

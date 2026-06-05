@@ -7,11 +7,14 @@ dependencies:
   - nbformat
   - healpy
   - cartopy
+  - fiona
   - pip:
       - lxml
       - conflator
       - earthkit-data==0.20.0
       - earthkit-regrid
+      - earthkit-plots
+      - earthkit-geo
       - covjsonkit
       - polytope-client
       - kaleido
