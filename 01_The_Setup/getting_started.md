@@ -24,7 +24,16 @@ python3 -m ipykernel install --name climatedt_workshop --user
 ```
 
 ### 1.2 Using pip
-TODO
+Create a virtual environment, activate and install packages 
+```shell
+python3 -m venv climatedt_workshop
+source climatedt_workshop/bin/activate
+pip install -r requirements.txt
+```
+
+### 1.3 For HPC
+- Always build a container for your Python environment using for example Singularity/Apptainer. 
+- lumi-container-wrapper also found quite useful
 
 ## 2. Setting up the DESP authentication
 

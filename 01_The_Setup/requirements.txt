@@ -1,0 +1,4 @@
+ipython
+earthkit==0.13.2
+polytope-client==0.7.9
+lxml
