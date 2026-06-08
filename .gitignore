@@ -4,6 +4,9 @@ desp-authentication.py
 # Jupyter Notebook
 .ipynb_checkpoints
 
+data/
+slides/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
