@@ -1,27 +1,24 @@
 
+
 import earthkit
-import numpy as np
 
-
-address="polytope.lumi.apps.dte.destination-earth.eu"
-
-
+address="polytope.mn5.apps.dte.destination-earth.eu"
 
 request = {
     "activity": "baseline",
     "class": "d1",
     "dataset": "climate-dt",
-    "experiment": "hist",
+    "experiment": "cont",
     "expver": "0001",
     "generation": "2",
-    "model": "icon",
+    "model": "ifs-nemo",
     "realization": "1",
     "resolution": "high",
     "stream": "clte",
     "type": "fc",
-    "param": "167",
+    "param": "228164",
     "levtype": "sfc",
-    "date": "20141231/to/20150101",  ## this will fail
+    "date": "19960610",
     "time": "0000"
 }
 
@@ -34,6 +31,4 @@ data = earthkit.data.from_source(
     address = address
 )
 
-
-
-
+print(data.ls())

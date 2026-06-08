@@ -1,17 +1,14 @@
 
-import earthkit
-import numpy as np
 
+import earthkit
 
 address="polytope.lumi.apps.dte.destination-earth.eu"
 
-
-
 request = {
-    "activity": "baseline",
+    "activity": "projections",
     "class": "d1",
     "dataset": "climate-dt",
-    "experiment": "hist",
+    "experiment": "ssp3-7.0",
     "expver": "0001",
     "generation": "2",
     "model": "icon",
@@ -19,9 +16,10 @@ request = {
     "resolution": "high",
     "stream": "clte",
     "type": "fc",
-    "param": "167",
-    "levtype": "sfc",
-    "date": "20141231/to/20150101",  ## this will fail
+    "param": "133",
+    "levtype": "pl",
+    "level": "850/500/200",
+    "date": "20200101",
     "time": "0000"
 }
 
@@ -30,10 +28,9 @@ data = earthkit.data.from_source(
     "polytope",
     "destination-earth",
     request,
-    stream=False,   
+    stream=False,    
     address = address
 )
 
 
-
-
+print(data.ls())

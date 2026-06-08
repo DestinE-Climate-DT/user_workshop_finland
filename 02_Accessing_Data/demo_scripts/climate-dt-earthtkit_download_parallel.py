@@ -11,18 +11,18 @@ def makerequest(date):
         "activity": "baseline",
         "class": "d1",
         "dataset": "climate-dt",
-        "date": f"{date}",
         "experiment": "hist",
         "expver": "0001",
         "generation": "2",
-        "levtype": "sfc",
         "model": "ifs-fesom",
-        "param": "167",
         "realization": "1",
         "resolution": "high",
         "stream": "clte",
-        "time": "0000",
         "type": "fc",
+        "param": "167",
+        "levtype": "sfc",
+        "date": f"{date}",
+        "time": "0000"
     }
     return request
 
@@ -36,7 +36,7 @@ def getstuff(date):
         "polytope",
         "destination-earth",
         request,
-        stream=False,    ## stream == true would return an iterator-like object
+        stream=False,    
         address = address
     )
 

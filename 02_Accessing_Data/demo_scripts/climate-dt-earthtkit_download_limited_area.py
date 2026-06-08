@@ -1,6 +1,5 @@
 
 import earthkit.data
-import numpy as np
 
 address="polytope.lumi.apps.dte.destination-earth.eu"
 
@@ -10,18 +9,18 @@ request = {
     "activity": "baseline",
     "class": "d1",
     "dataset": "climate-dt",
-    "date": "20100102",
     "experiment": "hist",
     "expver": "0001",
     "generation": "2",
-    "levtype": "sfc",
     "model": "ifs-fesom",
-    "param": "167",
     "realization": "1",
     "resolution": "high",
     "stream": "clte",
-    "time": "0000",
-    "type": "fc"
+    "type": "fc",
+    "param": "167",
+    "levtype": "sfc",
+    "date": "20100102",
+    "time": "0000"
 }
 
 ## Gets data to memory
@@ -39,18 +38,18 @@ request = {
     "activity": "baseline",
     "class": "d1",
     "dataset": "climate-dt",
-    "date": "20100102",
     "experiment": "hist",
     "expver": "0001",
     "generation": "2",
-    "levtype": "sfc",
     "model": "ifs-fesom",
-    "param": "167",
     "realization": "1",
     "resolution": "high",
     "stream": "clte",
-    "time": "0000",
     "type": "fc",
+    "param": "167",
+    "levtype": "sfc",
+    "date": "20100102",
+    "time": "0000",
     "feature": {
         "type": "boundingbox",
         "points" : [[53.55, 2.76], [50.66, 7.86]]
