@@ -4,9 +4,6 @@ client = Client(
     address="polytope.lumi.apps.dte.destination-earth.eu",
 )
 
-
-## Build the request: LINK(s) to where to find the parameters 
-
 request = {
     "activity": "baseline",
     "class": "d1",
@@ -26,5 +23,5 @@ request = {
 }
 
 # Download to a files in current directory
-files = client.retrieve("destination-earth", request, f"download_polytope_test.grib")
+files = client.retrieve("destination-earth", request, "download_polytope_test.grib")
 

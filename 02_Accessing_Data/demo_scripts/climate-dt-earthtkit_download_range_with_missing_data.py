@@ -1,11 +1,7 @@
 
 import earthkit
-import numpy as np
-
 
 address="polytope.lumi.apps.dte.destination-earth.eu"
-
-
 
 request = {
     "activity": "baseline",

@@ -33,4 +33,4 @@ data = earthkit.data.from_source(
     address = address
 )
 
-data.ls()
+print(data.ls())

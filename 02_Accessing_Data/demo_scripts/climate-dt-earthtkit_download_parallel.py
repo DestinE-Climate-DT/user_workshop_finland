@@ -4,7 +4,6 @@ import concurrent.futures as cf
 
 address="polytope.lumi.apps.dte.destination-earth.eu"
 
-
 def makerequest(date):
 
     request = {
@@ -26,7 +25,6 @@ def makerequest(date):
     }
     return request
 
-
 def getstuff(date):
 
     request = makerequest(date)
@@ -40,11 +38,10 @@ def getstuff(date):
         address = address
     )
 
-    ## save to file
-    data.to_target("file",f"earthkit_test_download_parallel_{date}.grib")
-
     # return handle
     return data
+
+
 
 dates_list = [
     "20100301",
@@ -53,9 +50,18 @@ dates_list = [
     "20100304"
 ]
 
-
 with cf.ThreadPoolExecutor(max_workers=4) as exe:
     futures = [exe.submit(getstuff, dt) for dt in dates_list]
 
-
 handles = [ff.result() for ff in futures]
+
+concat = sum(handles[1:],handles[0])
+
+
+
+
+
+
+
+
+

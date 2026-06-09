@@ -3,8 +3,6 @@ import earthkit.data
 
 address="polytope.lumi.apps.dte.destination-earth.eu"
 
-
-
 request = {
     "activity": "baseline",
     "class": "d1",
@@ -31,8 +29,6 @@ data_full = earthkit.data.from_source(
     stream=False,   
     address = address
 )
-
-
 
 request = {
     "activity": "baseline",
