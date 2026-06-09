@@ -32,3 +32,10 @@ TODO
 cd /yourpathto/finnish_user_workshop/
 wget https://raw.githubusercontent.com/destination-earth-digital-twins/polytope-examples/refs/heads/main/desp-authentication.py
 ```
+
+## 3. Launching a Jupyter notebook
+If you are not using an editor that supports notebooks, you can also launch them in your browser instead. To do so, first install the package `jupyter`:
+```shell
+mamba install jupyter
+```
+Then, run the command `jupyter notebook` to start a notebook kernel in your browser. There, you can select the .ipynb files you wish to run.
