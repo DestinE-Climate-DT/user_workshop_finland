@@ -26,7 +26,7 @@ data = earthkit.data.from_source(
     "polytope",
     "destination-earth",
     request,
-    stream=False,   t
+    stream=False,
     address = address
 )
 
