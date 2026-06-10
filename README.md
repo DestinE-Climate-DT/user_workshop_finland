@@ -15,3 +15,4 @@ Material for the user workshop hosted by CSC focusing on finnish users.
 | 12:50 | Hands-on session 2 | Tracy Kiszler, Antti Vartiainen |
 | 14:00 | Pulla! |  |
 | 14:30 | Hands-on session 2 continued | Tracy Kiszler, Antti Vartiainen |
+| 16:00 | End | |
