@@ -8,8 +8,18 @@ dependencies:
   - jupyter
   - nbformat
   - healpy
+  - gdal
+  - eccodes
+  - intake
+  - intake-esm
+  - cdo
+  - pandas
+  - xarray
+  - gcsfs
+  - zarr
   - cartopy
-  - fiona
+  - pip
+  - spyder
   - pip:
       - lxml
       - conflator
@@ -17,8 +27,7 @@ dependencies:
       - earthkit-regrid
       - earthkit-plots
       - earthkit-geo
-      - covjsonkit
+      - covjsonkit>=0.2.5
       - polytope-client
       - kaleido
       - h3
-name: climatedt_workshop
